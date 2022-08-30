@@ -9,6 +9,7 @@
             name = "Hej";
             Console.WriteLine("Hej på dig " + name + " och grattis till ditt första program!");
             Console.WriteLine("Hej på dig " + name + " och grattis till ditt första program!");
+            Console.WriteLine("hej igen");
         }
     }
 }
