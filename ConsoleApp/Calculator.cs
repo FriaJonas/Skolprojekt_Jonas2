@@ -10,7 +10,7 @@ namespace ConsoleApp
     {
         public static void ShowSum(int tal1, int tal2)
         {
-            int sum = tal1 + tal2;
+            int sum = tal1 + tal2 +20;
             Console.WriteLine("Summa:" + sum);
         }
 
