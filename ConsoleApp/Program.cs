@@ -1,15 +1,18 @@
-﻿namespace ConsoleApp
+﻿using System.Diagnostics;
+using System.Runtime;
+
+namespace ConsoleApp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hej - vad heter du ?");
-            string name = Console.ReadLine();
-            name = "Hej";
-            Console.WriteLine("Hej på dig " + name + " och grattis till ditt första program!");
-            Console.WriteLine("Hej på dig " + name + " och grattis till ditt första program!");
-            Console.WriteLine("hej igen");
+            //Calculator.ShowSum(100, 200);
+            Calculator.Uppgift1();
         }
+
+
+
+      
     }
 }
