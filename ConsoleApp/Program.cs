@@ -7,9 +7,9 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //Calculator.ShowSum(100, 200);
-            Calculator.Uppgift1();
+            //MyCalc.CalcAge();
         }
+
 
 
 
