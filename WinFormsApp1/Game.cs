@@ -173,11 +173,17 @@ namespace WinFormsApp1
         {
             if (p1Points == 5)
             {
+                //Börjar med att stoppa timern så att spelet inte fortsätter loopa
+                GameTimer.Stop();
                 MessageBox.Show("Grattis spelare " + p1Name + " - du vann!!");
+                
             }
             else if (p2Points == 5)
             {
+                //Börjar med att stoppa timern så att spelet inte fortsätter loopa
+                GameTimer.Stop();
                 MessageBox.Show("Grattis spelare " + p2Name + " - du vann!!");
+                
             }
         }
         private void Game_KeyDown(object sender, KeyEventArgs e)
