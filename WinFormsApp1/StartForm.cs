@@ -39,5 +39,13 @@ namespace WinFormsApp1
             moms.MdiParent = this;
             moms.Show();
         }
+
+        private void gameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Game g = new Game();
+            g.MdiParent=this;
+            g.Show();
+            g.Focus();
+        }
     }
 }
