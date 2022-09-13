@@ -24,7 +24,7 @@ namespace WinFormsApp1
         string p2Name = "Spelare 2";
 
         //heltal som håller reda på hur stor förflyttningen i pixlar / punkter ska ske över skärmen vid varje uppdatering.
-        int speed = 5; //Pixlar som objekten ska röra sig..
+        int speed = 15; //Pixlar som objekten ska röra sig..
 
         //Heltal som håller reda på riktning X och Y för spelare 1
         int p1XSpeed = 0;
@@ -42,11 +42,12 @@ namespace WinFormsApp1
             InitializeComponent();
             GameTimer.Tick += new EventHandler(GameUpdate);
 
-            GameTimer.Interval = 10;
+            GameTimer.Interval = 100;
             GameTimer.Start();
             lblPlayer1.Text = p1Name;
             lblPlayer2.Text = p2Name;
             ResetGame();
+            //SetStyle(ControlStyles.SupportsTransparentBackColor,true);
         }
 
         private void ResetGame()
@@ -232,6 +233,11 @@ namespace WinFormsApp1
                 p2YSpeed = speed;
                 p2XSpeed = 0;
             }
+        }
+
+        private void Game_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

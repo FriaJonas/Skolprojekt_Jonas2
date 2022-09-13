@@ -5,14 +5,18 @@ namespace ConsoleApp
 {
     class Program
     {
+        static string name = "";
         static void Main(string[] args)
         {
-            //MyCalc.CalcAge();
+            name = "Kung Bore";
+
+            PrintName();
+        }  
+
+        static private void PrintName()
+        {
+            Console.WriteLine(name);
         }
-
-
-
-
-      
+        
     }
 }

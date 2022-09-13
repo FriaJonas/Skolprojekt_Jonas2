@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.Player1 = new System.Windows.Forms.PictureBox();
             this.lblPlayer1 = new System.Windows.Forms.Label();
             this.lblPlayer1Points = new System.Windows.Forms.Label();
@@ -43,10 +42,14 @@
             // 
             // Player1
             // 
-            this.Player1.BackColor = System.Drawing.Color.Red;
-            this.Player1.Location = new System.Drawing.Point(31, 101);
+            this.Player1.BackColor = System.Drawing.Color.Transparent;
+            this.Player1.BackgroundImage = global::WinFormsApp1.Properties.Resources.bomb;
+            this.Player1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Player1.InitialImage = null;
+            this.Player1.Location = new System.Drawing.Point(80, 117);
             this.Player1.Name = "Player1";
-            this.Player1.Size = new System.Drawing.Size(32, 70);
+            this.Player1.Size = new System.Drawing.Size(79, 91);
+            this.Player1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Player1.TabIndex = 0;
             this.Player1.TabStop = false;
             // 
@@ -120,7 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::WinFormsApp1.Properties.Resources.bgspace;
             this.ClientSize = new System.Drawing.Size(892, 575);
             this.Controls.Add(this.Ball);
             this.Controls.Add(this.Player2);
@@ -131,6 +134,7 @@
             this.Controls.Add(this.Player1);
             this.Name = "Game";
             this.Text = "Game";
+            this.Load += new System.EventHandler(this.Game_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Game_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).EndInit();

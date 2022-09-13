@@ -18,7 +18,6 @@ namespace WinFormsApp1
         }
 
 
-
         private void helloWorldToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             HelloWorld Hello = new HelloWorld();
