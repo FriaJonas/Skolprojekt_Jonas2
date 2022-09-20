@@ -5,16 +5,22 @@ namespace ConsoleApp
 {
     class Program
     {
-        static string name = "";
         static void Main(string[] args)
         {
-            name = "Kung Bore";
+            //PrintName();
+            //InputName();
 
-            PrintName();
+            Array.Start();
         }  
 
         static private void PrintName()
         {
+            Console.WriteLine("Jonas");
+            
+        }
+        static void InputName()
+        {
+            string name = Console.ReadLine();
             Console.WriteLine(name);
         }
         

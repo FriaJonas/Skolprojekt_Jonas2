@@ -8,14 +8,18 @@ namespace ConsoleApp
 {
     internal class Calculator
     {
+        static int NyttTal=0;
         public static void ShowSum(int tal1, int tal2)
         {
+            NyttTal++;
+
             int sum = tal1 + tal2 +20;
             Console.WriteLine("Summa:" + sum);
         }
 
         public static void Uppgift1()
         {
+           
             Console.WriteLine("Hej, vad heter du?");
             string name = Console.ReadLine();
             Console.WriteLine("Vilket år är du född?");
@@ -27,7 +31,7 @@ namespace ConsoleApp
 
             int yearToPension = 65 - age;
 
-            if (yearToPension > 0)
+            if (yearToPension > 0 )
             {
                 Console.WriteLine("Du har " + yearToPension + " år till pension");
             }

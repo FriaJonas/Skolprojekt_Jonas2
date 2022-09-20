@@ -20,6 +20,14 @@ namespace ConsoleApp
 
             Console.WriteLine("Hej " + myName + ", du är " + age + " år gammal.....");
 
+            CalcYearToPension(age);
+
+        }
+
+        public static void CalcYearToPension(int age)
+        {
+            int yearToPension = 65 - age;
+            Console.WriteLine("Du har " + yearToPension + " år kvar till pension");
         }
     }
 }

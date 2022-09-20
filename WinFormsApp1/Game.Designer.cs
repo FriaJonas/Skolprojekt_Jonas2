@@ -113,7 +113,7 @@
             // Ball
             // 
             this.Ball.BackColor = System.Drawing.Color.Orange;
-            this.Ball.Location = new System.Drawing.Point(435, 518);
+            this.Ball.Location = new System.Drawing.Point(438, 367);
             this.Ball.Name = "Ball";
             this.Ball.Size = new System.Drawing.Size(30, 31);
             this.Ball.TabIndex = 7;
@@ -133,7 +133,7 @@
             this.Controls.Add(this.lblPlayer1);
             this.Controls.Add(this.Player1);
             this.Name = "Game";
-            this.Text = "Game";
+            this.Text = "Datten\'";
             this.Load += new System.EventHandler(this.Game_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Game_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.Player1)).EndInit();

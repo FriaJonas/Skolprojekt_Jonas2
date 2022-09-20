@@ -193,6 +193,7 @@ namespace WinFormsApp1
             
             if(e.KeyCode == Keys.A )
             {
+               
                 p1XSpeed = -speed;
                 p1YSpeed = 0;
             }

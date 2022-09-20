@@ -46,5 +46,21 @@ namespace WinFormsApp1
             g.Show();
             g.Focus();
         }
+
+        private void gameExToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GameExempel ge = new GameExempel();
+            ge.MdiParent = this;
+            ge.Show();
+            ge.Focus();
+        }
+
+        private void game2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelloWorld game2 = new HelloWorld();
+            game2.MdiParent = this;
+            game2.Show();
+            game2.Focus();
+        }
     }
 }
