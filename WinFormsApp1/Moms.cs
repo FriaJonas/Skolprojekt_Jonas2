@@ -26,5 +26,10 @@ namespace WinFormsApp1
             txtPriceExTax.Text = priceextax.ToString();
 
         }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
