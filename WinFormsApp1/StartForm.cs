@@ -62,5 +62,21 @@ namespace WinFormsApp1
             game2.Show();
             game2.Focus();
         }
+
+        private void slumptalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Slumptal st = new Slumptal();
+            st.MdiParent = this;
+            st.Show();
+            st.Focus();
+        }
+
+        private void gissaTalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GuessNumber gn = new GuessNumber();
+            gn.MdiParent = this;
+            gn.Show();
+            gn.Focus();
+        }
     }
 }

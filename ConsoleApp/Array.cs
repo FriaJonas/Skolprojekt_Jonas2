@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    internal class Array
+    internal class ArrayEx
     {
         public static void Start()
         {

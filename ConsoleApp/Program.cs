@@ -7,22 +7,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //PrintName();
-            //InputName();
-
-            Array.Start();
+            LoopsTest.ForExample();
+            //LoopsTest.WhileExample();
         }  
-
-        static private void PrintName()
-        {
-            Console.WriteLine("Jonas");
-            
-        }
-        static void InputName()
-        {
-            string name = Console.ReadLine();
-            Console.WriteLine(name);
-        }
-        
     }
 }

@@ -15,6 +15,13 @@ namespace WinFormsApp1
         public GameExempel()
         {
             InitializeComponent();
+            PictureBox pb = new PictureBox();
+            pb.Width = 100;
+            pb.Height = 200;
+            pb.BackColor = Color.RebeccaPurple;
+            pb.Left = 200;
+            pb.Top = 300;
+            this.Controls.Add(pb);
         }
 
         private void GameExempel_Load(object sender, EventArgs e)
