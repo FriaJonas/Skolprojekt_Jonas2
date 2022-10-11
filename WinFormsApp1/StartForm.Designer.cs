@@ -31,6 +31,7 @@
             this.helloWorldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.helloWorldToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gissaTalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trikalkylatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.momsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,7 +39,8 @@
             this.gameExToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.game2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.slumptalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gissaTalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.spelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fallingStarsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +59,8 @@
             this.gameToolStripMenuItem,
             this.gameExToolStripMenuItem,
             this.game2ToolStripMenuItem,
-            this.slumptalToolStripMenuItem});
+            this.slumptalToolStripMenuItem,
+            this.spelToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
@@ -73,6 +76,13 @@
             this.helloWorldToolStripMenuItem1.Size = new System.Drawing.Size(103, 24);
             this.helloWorldToolStripMenuItem1.Text = "Hello World";
             this.helloWorldToolStripMenuItem1.Click += new System.EventHandler(this.helloWorldToolStripMenuItem1_Click);
+            // 
+            // gissaTalToolStripMenuItem
+            // 
+            this.gissaTalToolStripMenuItem.Name = "gissaTalToolStripMenuItem";
+            this.gissaTalToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.gissaTalToolStripMenuItem.Text = "Gissa tal";
+            this.gissaTalToolStripMenuItem.Click += new System.EventHandler(this.gissaTalToolStripMenuItem_Click);
             // 
             // trikalkylatorToolStripMenuItem
             // 
@@ -124,12 +134,20 @@
             this.slumptalToolStripMenuItem.Text = "Slumptal";
             this.slumptalToolStripMenuItem.Click += new System.EventHandler(this.slumptalToolStripMenuItem_Click);
             // 
-            // gissaTalToolStripMenuItem
+            // spelToolStripMenuItem
             // 
-            this.gissaTalToolStripMenuItem.Name = "gissaTalToolStripMenuItem";
-            this.gissaTalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.gissaTalToolStripMenuItem.Text = "Gissa tal";
-            this.gissaTalToolStripMenuItem.Click += new System.EventHandler(this.gissaTalToolStripMenuItem_Click);
+            this.spelToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fallingStarsToolStripMenuItem});
+            this.spelToolStripMenuItem.Name = "spelToolStripMenuItem";
+            this.spelToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.spelToolStripMenuItem.Text = "Spel";
+            // 
+            // fallingStarsToolStripMenuItem
+            // 
+            this.fallingStarsToolStripMenuItem.Name = "fallingStarsToolStripMenuItem";
+            this.fallingStarsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fallingStarsToolStripMenuItem.Text = "Falling stars";
+            this.fallingStarsToolStripMenuItem.Click += new System.EventHandler(this.fallingStarsToolStripMenuItem_Click);
             // 
             // StartForm
             // 
@@ -163,5 +181,7 @@
         private ToolStripMenuItem game2ToolStripMenuItem;
         private ToolStripMenuItem slumptalToolStripMenuItem;
         private ToolStripMenuItem gissaTalToolStripMenuItem;
+        private ToolStripMenuItem spelToolStripMenuItem;
+        private ToolStripMenuItem fallingStarsToolStripMenuItem;
     }
 }

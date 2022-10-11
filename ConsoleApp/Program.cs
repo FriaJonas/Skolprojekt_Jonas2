@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using ConsoleApp.lib;
+using System.Diagnostics;
 using System.Runtime;
 
 namespace ConsoleApp
@@ -7,8 +8,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            LoopsTest.ForExample();
-            //LoopsTest.WhileExample();
+            SchoolExample example = new SchoolExample();
+            example.ListStudentExample();
         }  
     }
 }

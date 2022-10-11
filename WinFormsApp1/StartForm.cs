@@ -78,5 +78,13 @@ namespace WinFormsApp1
             gn.Show();
             gn.Focus();
         }
+
+        private void fallingStarsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FallingStars fs = new FallingStars();
+            fs.MdiParent = this;
+            fs.Show();
+            fs.Focus();
+        }
     }
 }
