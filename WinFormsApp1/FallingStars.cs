@@ -14,6 +14,7 @@ namespace WinFormsApp1
     public partial class FallingStars : Form
     {
         List<Star> stars = new List<Star>();
+        Fighter fight = new Fighter();
         public FallingStars()
         {
             InitializeComponent();
@@ -27,6 +28,10 @@ namespace WinFormsApp1
                 this.Controls.Add(s);
                 stars.Add(s);
             }
+
+            
+            this.Controls.Add(fight);
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -35,6 +40,7 @@ namespace WinFormsApp1
             {
                 s.Fall();
             }
+            fight.Move();
         }
     }
 }
