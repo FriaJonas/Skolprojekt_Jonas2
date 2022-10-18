@@ -18,6 +18,7 @@ namespace ConsoleApp.lib
             Color = color;
             Price = price;
         }
+        public Car() { }
 
         public void PrintInfo()
         {

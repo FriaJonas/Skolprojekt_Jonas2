@@ -19,11 +19,17 @@ namespace WinFormsApp1
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            
-            decimal price = Convert.ToDecimal(txtPrice.Text);
-            decimal tax = Convert.ToDecimal(txtTaxrate.Text);
-            decimal priceextax =  (price/ (tax + 100)) * 100;
-            txtPriceExTax.Text = priceextax.ToString();
+            try
+            {
+                decimal price = Convert.ToDecimal(txtPrice.Text);
+                decimal tax = Convert.ToDecimal(txtTaxrate.Text);
+                decimal priceextax = (price / (tax + 100)) * 100;
+                txtPriceExTax.Text = priceextax.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Något gick fel: "+ex.Message);
+            }
 
         }
 

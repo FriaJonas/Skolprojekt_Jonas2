@@ -6,10 +6,10 @@ namespace ConsoleApp
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            SchoolExample example = new SchoolExample();
-            example.ListStudentExample();
+            LifeObject lo = new LifeObject();
         }  
     }
 }
