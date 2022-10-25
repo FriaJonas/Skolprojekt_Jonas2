@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp2", "WinFormsApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{721CB74A-DB55-405B-8B9A-90DABE625A68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameEx", "MonoGameEx\MonoGameEx.csproj", "{8667610A-B5B5-448B-A581-175EE42A7409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoGameEx", "MonoGameEx\MonoGameEx.csproj", "{8667610A-B5B5-448B-A581-175EE42A7409}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebbApp", "CoreWebbApp\CoreWebbApp.csproj", "{C2D89A12-E04E-4C05-8409-5D1A19635701}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreWebbApp", "CoreWebbApp\CoreWebbApp.csproj", "{C2D89A12-E04E-4C05-8409-5D1A19635701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp", "MauiApp\MauiApp.csproj", "{D96C1D51-C31F-46B7-99FC-23D3EE02A065}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,12 @@ Global
 		{C2D89A12-E04E-4C05-8409-5D1A19635701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2D89A12-E04E-4C05-8409-5D1A19635701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2D89A12-E04E-4C05-8409-5D1A19635701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D96C1D51-C31F-46B7-99FC-23D3EE02A065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96C1D51-C31F-46B7-99FC-23D3EE02A065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96C1D51-C31F-46B7-99FC-23D3EE02A065}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D96C1D51-C31F-46B7-99FC-23D3EE02A065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96C1D51-C31F-46B7-99FC-23D3EE02A065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D96C1D51-C31F-46B7-99FC-23D3EE02A065}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
