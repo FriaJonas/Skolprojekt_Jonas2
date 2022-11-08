@@ -9,7 +9,10 @@ namespace ConsoleApp
         
         static void Main(string[] args)
         {
-            LifeObject lo = new LifeObject();
+            //LifeObject lo = new LifeObject();
+            StudentListExample SE = new StudentListExample();
+            SE.ObjectTest();
+            
         }  
     }
 }

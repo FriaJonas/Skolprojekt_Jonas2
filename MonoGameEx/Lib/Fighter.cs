@@ -14,13 +14,9 @@ namespace MonoGameEx.Lib
         public Vector2 Position;
         protected Texture2D Texture { get; set; }
 
-        public Fighter(Game _game)
+        public Fighter(Texture2D graphics)
         {
-            //tar emot det aktuella spelet
-            game = _game;
-
-            //laddar grafiken
-            Texture = game.Content.Load<Texture2D>("fighter");
+            Texture = graphics;
         }
         public virtual void Draw(SpriteBatch spriteBatch)
         {

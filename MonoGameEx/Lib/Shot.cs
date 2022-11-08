@@ -8,28 +8,31 @@ using System.Threading.Tasks;
 
 namespace MonoGameEx.Lib
 {
-    internal class Shot
+    public class Shot
     {
-        public int Speed { get; set; }
+        //Hastigheten på skottet i antal pixlar
+        public int Speed { get; set; } 
         public bool IsActive { get; set; } = true;
-        public Game game { get; set; }
+
         public Vector2 Position;
         protected Texture2D Texture { get; set; }
 
-        public Shot(Game game) 
+        public Shot(Texture2D grafics) 
         {
             Speed = -5;
-            Texture = game.Content.Load<Texture2D>("shot");
-
+            Texture = grafics;
         }
 
         public  void Update(GameTime gameTime)
         {
             Position.Y += Speed;
-            if (Position.Y < 0) this.IsActive = false;
+            if (Position.Y < 0)
+            {
+                this.IsActive = false;
+            }
            
         }
-        public virtual void Draw(SpriteBatch spriteBatch)
+        public  void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(Texture, Position, Color.White);
         }

@@ -13,8 +13,11 @@ namespace MonoGameEx
         private SpriteBatch _spriteBatch;
 
         Texture2D Background;
+        
+        Texture2D ShipGraphic;
         Fighter fighter { get; set; }
 
+        Texture2D ShotGraphic;
         List<Shot> shots { get; set; } = new List<Shot>();
 
         //Ljud
@@ -39,10 +42,7 @@ namespace MonoGameEx
             _graphics.PreferredBackBufferHeight = 550; 
 
             // TODO: Add your initialization logic here
-            fighter = new Fighter(this)
-            {
-                Position = new Vector2(_graphics.GraphicsDevice.Viewport.Width / 2 - 20, _graphics.GraphicsDevice.Viewport.Height - 60)
-            };
+
             base.Initialize();
         }
 
@@ -51,7 +51,15 @@ namespace MonoGameEx
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             Background = Content.Load<Texture2D>("bgspace");
             laserSound = Content.Load<SoundEffect>("laserSound");
+            ShotGraphic = Content.Load<Texture2D>("shot");
+            ShipGraphic = Content.Load<Texture2D>("fighter");
             // TODO: use this.Content to load your game content here
+
+            //Eftersom jag vill att mitt skepp ska vara med direkt i start så skapar vi  det här!
+            fighter = new Fighter(ShipGraphic)
+            {
+                Position = new Vector2(_graphics.GraphicsDevice.Viewport.Width / 2 - 20, _graphics.GraphicsDevice.Viewport.Height - 60)
+            };
         }
 
         protected override void Update(GameTime gameTime)
@@ -81,9 +89,10 @@ namespace MonoGameEx
             }
             if (ks.IsKeyDown(Keys.Space))
             {
+                //Spelar ljudet
                 laserSound.Play(0.7f, 0f, 0f);
                 
-                shots.Add(new Shot(this)
+                shots.Add(new Shot(ShotGraphic)
                 {
                     Position = new Vector2(fighter.Position.X + 20, fighter.Position.Y)
                 });
